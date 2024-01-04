@@ -1,0 +1,31 @@
+.userContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: red;
+    max-width: 700px;
+    margin: 40px auto;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: grey;
+    min-height: 80px;
+    text-align: center;
+}
+.userDetails h3{
+    padding-left: 10px;
+}
+.friends{
+    min-height: calc(100vh - 87px);
+}
+.btn{
+    max-width: 100px;
+    width: 100%;
+    margin: 10px 0 ;
+}
+.userContainer img{
+    width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        object-fit: cover;
+        padding-left: 5px;
+}

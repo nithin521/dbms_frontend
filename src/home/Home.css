@@ -1,0 +1,49 @@
+html,#root{
+  position: relative;
+}
+.isLight{
+    background:linear-gradient(130deg, darkgrey, grey);
+    animation: color-change-2x 3s linear infinite alternate both;
+    min-height: 100vh;
+    height: 100%;
+}
+.isDark{
+  background: linear-gradient( #3A3A3C,#181D31);
+min-height: 100vh;
+height: 100%;
+}
+@keyframes color-change-2x {
+    0% {
+        background: grey;
+    }
+
+    100% {
+        background: lightgray;
+    }
+}
+
+.iconContainer{
+    position: fixed;
+    bottom: 50px;
+    right: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100px;
+    width: 90%;
+    z-index: 100;
+}
+.icon{
+    font-size: xx-large;
+    background: linear-gradient(grey,pink);
+    padding: 15px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 10px 0px;
+    border: 1px solid black;
+}
+.icon:hover{
+    cursor: pointer;
+}

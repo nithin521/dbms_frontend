@@ -1,0 +1,67 @@
+
+.reqButtons button{
+    margin: 10px 2px;
+    align-items: center;
+}
+button p{
+    margin: 0px;
+}
+.reqContainer{
+    max-width: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: grey;
+    margin: 40px auto;
+    border-radius: 7px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+.requests{
+    max-height: calc(100vh - 87px);
+    padding: 0px 10px;
+}
+.middle h3 span{
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    font-size: 1.02rem;
+}
+.reqContainer img{
+    background-color: black;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 8px;
+    width: 60px;
+    height: 60px;
+}
+.none {
+    display: none;
+}
+.hover{
+    position: relative;
+}
+.hover:hover{
+    cursor: not-allowed;
+}
+.hover:hover::after{
+    content: 'Go to Freinds section to remove him';
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translateX(-50%);
+    /* text-wrap: nowrap; */
+    z-index: 100;
+    background-color: aliceblue;
+    padding: 4px 8px;
+    border-radius: 4px;
+    min-width: max-content;
+}
+@media screen and (max-width:840px) {
+    .hover:hover::after{
+        min-width: 120px;
+    }
+}

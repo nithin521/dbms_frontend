@@ -1,0 +1,136 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  background-color: #3a3a3c;
+  color: bisque;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  /* position: relative; */
+}
+.nav > img {
+  padding: 0px 20px;
+}
+.imageContainer img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.logoDiv{
+  flex: 0.1;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  width: 60%;
+  margin-left: auto;
+}
+.menu h3 {
+  padding: 0px 15px;
+}
+.menu > h3:hover,
+.dropdown h4:hover,
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: burlywood;
+}
+img {
+  cursor: pointer;
+}
+
+.main {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  width: 100vw;
+  display: none;
+  justify-content: space-around;
+  position: absolute;
+  background-color: #3a3a3c;
+  top: 100%;
+  left: 0px;
+  opacity: 1;
+  flex-wrap: wrap;
+  transition: opacity 0.5s ease-in-out;
+  padding: 0 20px;
+  
+}
+
+.dropdown h4 {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.genre-container:hover .dropdown {
+  display: flex;
+  opacity: 1;
+}
+.link {
+  color: bisque;
+  text-decoration: none;
+}
+.Ldropdown {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #3a3a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0px 25px;
+  visibility: hidden;
+}
+.imageContainer {
+  position: relative;
+  padding: 0px 5px;
+}
+.imageContainer:hover .Ldropdown {
+  visibility: visible;
+}
+.hamburger{
+  width: 40px;
+  height: 40px;
+  display: none;
+  flex: 0.1;
+  padding-right: 20px;
+}
+.hamburger:hover{
+  cursor: pointer;
+}
+.Ldropdown h3 {
+  cursor: pointer;
+}
+.sm{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background-color: #3a3a3c;
+  flex-direction: column;
+  font-size: larger;
+}
+@media screen and (max-width:795px) {
+    .menu{
+      display: none;
+    }
+    .hamburger{
+      display: block;
+    }
+}
+@media screen and (max-width:1005px) {
+  .menu{
+    width: 90%;
+  }
+}
+@media screen and (max-width:468px) {
+  .link{
+    font-size: large;
+  }
+}

@@ -1,0 +1,32 @@
+.completed{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+}
+.completed_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 0.13;
+}
+.completed_right {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin: 0px 20px;
+    text-align: justify;
+    flex:0.87;
+}
+.book_title{
+    text-align: center;
+}
+.completed_right .desc{display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical; overflow: hidden;}
+
+.book_created_at{
+    text-align: right;
+}

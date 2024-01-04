@@ -1,0 +1,33 @@
+.signUp{
+    max-width: 600px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.signUp h3{
+    color: darkmagenta;
+}
+.file{
+    margin: 20px ;
+    border: 0px;
+    width: 250px;
+    flex-wrap: wrap;
+    border: 1px solid black;
+}
+.upload{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+    width: 100%;
+}
+.upload h3{
+    width: max-content;
+}
+.signUp h1{
+    color: blueviolet;
+    margin-bottom: 0px;
+}

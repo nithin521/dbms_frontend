@@ -1,0 +1,96 @@
+.box {
+  width: 330px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* border-bottom-right-radius: 60px; */
+  height: 420px;
+  margin: 20px 5px;
+  background-color: antiquewhite;
+  box-shadow: 1px 4px 20px rgb(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+}
+.books {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 100px 0px;
+}
+.box h3 {
+  width: 90%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 2px;
+}
+.author h5 {
+  margin: 5px 0px;
+}
+.author {
+  text-align: center;
+  width: 200px;
+  margin-inline: auto;
+}
+.books h5 ,.books .title{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  width: 90%;
+ 
+}
+.innerbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 196px;
+}
+.innerbox h5 {
+  overflow: visible;
+  width: 100px;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.books .title,
+.books .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+h3 strong {
+  color: blueviolet;
+}
+.box {
+  position: relative;
+}
+.starIcon,.starIcon1 {
+  position: absolute;
+  right: 3%;
+  top: 4%;
+}
+.starIcon1{
+  top: 4.5%;
+  right: 4%;
+}
+.color {
+  background-color: black;
+}
+
+h5{
+  font-size: medium;
+
+}
+.author h5{
+  width: 100%;
+}
+span{
+  font-size: small;
+}

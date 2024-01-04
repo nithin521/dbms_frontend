@@ -1,0 +1,29 @@
+.history{
+    display: flex;
+    overflow-y: auto;
+}
+.history .right{
+    flex: 0.85;
+    background-color: #ADD8E6;
+    min-height: calc(100vh - 65px);
+    padding: 0px 2%;
+}
+.history .left{
+    flex: 0.15;
+    background-color: #B76E79;
+    min-height: calc(100vh - 65px);
+    padding: 0px 2%;
+    width: 100%;
+}
+.history .left h3{
+    padding: 4px 0;
+}
+.active{
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+@media screen and (max-width:472px) {
+    .history{
+        flex-direction: column;
+    }
+}
